@@ -9,6 +9,7 @@ public class Lab2 {
 		System.out.println("Nhập 2 số a và b:");
 		int a = scanner.nextInt();
 		int b = scanner.nextInt();
+		System.out.printf("Giải phương trình bậc nhất: %dx + %d =0 \n", a, b);
 
 		if (a == 0 && b == 0) {
 			System.out.println("Phương trình vô số nghiệm");
@@ -16,7 +17,7 @@ public class Lab2 {
 			System.out.println("Phương trình vô nghiệm");
 		} else {
 			float x = (float) -b / a;
-			System.out.println("x = " + x);
+			System.out.printf("x = %.3f", x);
 		}
 		scanner.close();
 
@@ -29,6 +30,7 @@ public class Lab2 {
 		int a = scanner.nextInt();
 		int b = scanner.nextInt();
 		int c = scanner.nextInt();
+		System.out.printf("Giải phương trình bậc hai: %dx^2 + %dx + %d =0 \n", a, b, c);
 
 		if (a == 0) {
 			if (b == 0 && c == 0) {
@@ -37,7 +39,7 @@ public class Lab2 {
 				System.out.println("Phương trình vô nghiệm");
 			} else {
 				float x = (float) -c / b;
-				System.out.println("x = " + x);
+				System.out.printf("x = %.3f", x);
 			}
 		} else {
 			double delta = (double) Math.pow(b, 2) - 4 * a * c;
@@ -45,12 +47,12 @@ public class Lab2 {
 				System.out.println("Phương trình vô nghiệm");
 			} else if (delta == 0) {
 				float x = (float) -b / (2 * a);
-				System.out.println("Nghiệm kép x =" + x);
+				System.out.printf("Nghiệm kép x = %.3f", x);
 			} else {
 				double x1 = (double) (-b + Math.sqrt(delta)) / (2 * a);
 				double x2 = (double) (-b - Math.sqrt(delta)) / (2 * a);
-				System.out.println("x1= " + x1);
-				System.out.println("x2= " + x2);
+				System.out.printf("x1= %.3f \n", x1);
+				System.out.printf("x2= %.3f", x2);
 			}
 		}
 		scanner.close();
