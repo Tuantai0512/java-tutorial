@@ -40,7 +40,7 @@ public class Lab3 {
 	private static void Bai3() {
 		System.out.println("Bài 3: Nhập mảng");
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Nhập số phần tử mảng: ");
+		System.out.print("Nhập số phần tử mảng: ");
 		int arr_length = scanner.nextInt();
 
 		int[] array = new int[arr_length];
