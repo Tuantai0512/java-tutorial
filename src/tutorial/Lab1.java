@@ -11,6 +11,7 @@ public class Lab1 {
 		System.out.println("Điểm trung bình: ");
 		Float score = scanner.nextFloat();
 		System.out.println(name + " có điểm = " + score);
+		scanner.close();
 	}
 
 	public static void Bai2() {
@@ -22,6 +23,7 @@ public class Lab1 {
 		System.out.println("Chu vi: " + (dai + rong) * 2);
 		System.out.println("Dien tich: " + dai * rong);
 		System.out.println("Cạnh nhỏ nhất: " + Math.min(dai, rong));
+		scanner.close();
 	}
 
 	public static void Bai3() {
@@ -30,6 +32,7 @@ public class Lab1 {
 		System.out.println("Nhập chiều dài cạnh của hình lập phương: ");
 		int canh = scanner.nextInt();
 		System.out.println("Chu vi: " + Math.pow(canh, 3));
+		scanner.close();
 	}
 
 	public static void main(String[] args) {
