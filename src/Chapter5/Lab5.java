@@ -12,7 +12,7 @@ public class Lab5 {
 		while (true) {
 			double x = scanner.nextDouble();
 			list.add(x);
-			scanner.nextLine();
+			scanner.nextLine(); // enter
 			System.out.println("Continue ? (Y/N)");
 			String option = scanner.nextLine();
 			if (option.equals("N") || option.equals("n")) {
